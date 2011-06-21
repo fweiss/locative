@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2DCD598B13B05B9900B06640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598A13B05B9900B06640 /* UIKit.framework */; };
+		2DCD598D13B05B9900B06640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598C13B05B9900B06640 /* Foundation.framework */; };
+		2DCD598F13B05B9900B06640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598E13B05B9900B06640 /* CoreGraphics.framework */; };
+		2DCD599513B05B9900B06640 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD599313B05B9900B06640 /* InfoPlist.strings */; };
+		2DCD599813B05B9900B06640 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD599713B05B9900B06640 /* main.m */; };
+		2DCD599B13B05B9900B06640 /* OverThereAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD599A13B05B9900B06640 /* OverThereAppDelegate.m */; };
+		2DCD599F13B05B9900B06640 /* OverThereAppDelegate_iPhone.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD599E13B05B9900B06640 /* OverThereAppDelegate_iPhone.m */; };
+		2DCD59A213B05B9900B06640 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD59A013B05B9900B06640 /* MainWindow_iPhone.xib */; };
+		2DCD59A613B05B9900B06640 /* OverThereAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD59A513B05B9900B06640 /* OverThereAppDelegate_iPad.m */; };
+		2DCD59A913B05B9900B06640 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD59A713B05B9900B06640 /* MainWindow_iPad.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2DCD598613B05B9900B06640 /* OverThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2DCD598A13B05B9900B06640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2DCD598C13B05B9900B06640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2DCD598E13B05B9900B06640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2DCD599213B05B9900B06640 /* OverThere-Info.plist */ = {isa = PBXFileReference; path = "OverThere-Info.plist"; sourceTree = "<group>"; };
+		2DCD599413B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2DCD599613B05B9900B06640 /* OverThere-Prefix.pch */ = {isa = PBXFileReference; path = "OverThere-Prefix.pch"; sourceTree = "<group>"; };
+		2DCD599713B05B9900B06640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2DCD599913B05B9900B06640 /* OverThereAppDelegate.h */ = {isa = PBXFileReference; path = OverThereAppDelegate.h; sourceTree = "<group>"; };
+		2DCD599A13B05B9900B06640 /* OverThereAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverThereAppDelegate.m; sourceTree = "<group>"; };
+		2DCD599D13B05B9900B06640 /* OverThereAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = OverThereAppDelegate_iPhone.h; path = iPhone/OverThereAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		2DCD599E13B05B9900B06640 /* OverThereAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OverThereAppDelegate_iPhone.m; path = iPhone/OverThereAppDelegate_iPhone.m; sourceTree = "<group>"; };
+		2DCD59A113B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
+		2DCD59A413B05B9900B06640 /* OverThereAppDelegate_iPad.h */ = {isa = PBXFileReference; name = OverThereAppDelegate_iPad.h; path = iPad/OverThereAppDelegate_iPad.h; sourceTree = "<group>"; };
+		2DCD59A513B05B9900B06640 /* OverThereAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OverThereAppDelegate_iPad.m; path = iPad/OverThereAppDelegate_iPad.m; sourceTree = "<group>"; };
+		2DCD59A813B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2DCD598313B05B9900B06640 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD598B13B05B9900B06640 /* UIKit.framework in Frameworks */,
+				2DCD598D13B05B9900B06640 /* Foundation.framework in Frameworks */,
+				2DCD598F13B05B9900B06640 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2DCD597B13B05B9800B06640 = {
+			isa = PBXGroup;
+			children = (
+				2DCD599013B05B9900B06640 /* OverThere */,
+				2DCD598913B05B9900B06640 /* Frameworks */,
+				2DCD598713B05B9900B06640 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2DCD598713B05B9900B06640 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD598613B05B9900B06640 /* OverThere.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2DCD598913B05B9900B06640 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD598A13B05B9900B06640 /* UIKit.framework */,
+				2DCD598C13B05B9900B06640 /* Foundation.framework */,
+				2DCD598E13B05B9900B06640 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2DCD599013B05B9900B06640 /* OverThere */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD599913B05B9900B06640 /* OverThereAppDelegate.h */,
+				2DCD599A13B05B9900B06640 /* OverThereAppDelegate.m */,
+				2DCD599C13B05B9900B06640 /* iPhone */,
+				2DCD59A313B05B9900B06640 /* iPad */,
+				2DCD599113B05B9900B06640 /* Supporting Files */,
+			);
+			path = OverThere;
+			sourceTree = "<group>";
+		};
+		2DCD599113B05B9900B06640 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD599213B05B9900B06640 /* OverThere-Info.plist */,
+				2DCD599313B05B9900B06640 /* InfoPlist.strings */,
+				2DCD599613B05B9900B06640 /* OverThere-Prefix.pch */,
+				2DCD599713B05B9900B06640 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2DCD599C13B05B9900B06640 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD599D13B05B9900B06640 /* OverThereAppDelegate_iPhone.h */,
+				2DCD599E13B05B9900B06640 /* OverThereAppDelegate_iPhone.m */,
+				2DCD59A013B05B9900B06640 /* MainWindow_iPhone.xib */,
+			);
+			name = iPhone;
+			sourceTree = "<group>";
+		};
+		2DCD59A313B05B9900B06640 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+				2DCD59A413B05B9900B06640 /* OverThereAppDelegate_iPad.h */,
+				2DCD59A513B05B9900B06640 /* OverThereAppDelegate_iPad.m */,
+				2DCD59A713B05B9900B06640 /* MainWindow_iPad.xib */,
+			);
+			name = iPad;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2DCD598513B05B9900B06640 /* OverThere */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2DCD59AC13B05B9900B06640 /* Build configuration list for PBXNativeTarget "OverThere" */;
+			buildPhases = (
+				2DCD598213B05B9900B06640 /* Sources */,
+				2DCD598313B05B9900B06640 /* Frameworks */,
+				2DCD598413B05B9900B06640 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OverThere;
+			productName = OverThere;
+			productReference = 2DCD598613B05B9900B06640 /* OverThere.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2DCD597D13B05B9900B06640 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 2DCD598013B05B9900B06640 /* Build configuration list for PBXProject "OverThere" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2DCD597B13B05B9800B06640;
+			productRefGroup = 2DCD598713B05B9900B06640 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2DCD598513B05B9900B06640 /* OverThere */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2DCD598413B05B9900B06640 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD599513B05B9900B06640 /* InfoPlist.strings in Resources */,
+				2DCD59A213B05B9900B06640 /* MainWindow_iPhone.xib in Resources */,
+				2DCD59A913B05B9900B06640 /* MainWindow_iPad.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2DCD598213B05B9900B06640 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2DCD599813B05B9900B06640 /* main.m in Sources */,
+				2DCD599B13B05B9900B06640 /* OverThereAppDelegate.m in Sources */,
+				2DCD599F13B05B9900B06640 /* OverThereAppDelegate_iPhone.m in Sources */,
+				2DCD59A613B05B9900B06640 /* OverThereAppDelegate_iPad.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2DCD599313B05B9900B06640 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCD599413B05B9900B06640 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		2DCD59A013B05B9900B06640 /* MainWindow_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCD59A113B05B9900B06640 /* en */,
+			);
+			name = MainWindow_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		2DCD59A713B05B9900B06640 /* MainWindow_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2DCD59A813B05B9900B06640 /* en */,
+			);
+			name = MainWindow_iPad.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2DCD59AA13B05B9900B06640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2DCD59AB13B05B9900B06640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2DCD59AD13B05B9900B06640 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverThere/OverThere-Prefix.pch";
+				INFOPLIST_FILE = "OverThere/OverThere-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		2DCD59AE13B05B9900B06640 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OverThere/OverThere-Prefix.pch";
+				INFOPLIST_FILE = "OverThere/OverThere-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2DCD598013B05B9900B06640 /* Build configuration list for PBXProject "OverThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCD59AA13B05B9900B06640 /* Debug */,
+				2DCD59AB13B05B9900B06640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2DCD59AC13B05B9900B06640 /* Build configuration list for PBXNativeTarget "OverThere" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DCD59AD13B05B9900B06640 /* Debug */,
+				2DCD59AE13B05B9900B06640 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2DCD597D13B05B9900B06640 /* Project object */;
+}
