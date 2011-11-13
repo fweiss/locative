@@ -8,6 +8,9 @@
 
 #import "PoiDetailController2.h"
 
+@interface PoiDetailController2 (private)
+- (void) phoneAction;
+@end
 
 @implementation PoiDetailController2
 
@@ -15,7 +18,8 @@
 {
     self = [super initWithStyle:style];
     if (self) {
-        // Custom initialization
+        self.tableView.dataSource = self;
+        self.tableView.delegate = self;
     }
     return self;
 }
@@ -34,6 +38,15 @@
 }
 
 #pragma mark - View lifecycle
+
+- (void) loadView {    
+    UITableView* tableView = [[UITableView alloc] init];
+    tableView.delegate = self;
+    tableView.dataSource = self;
+    self.view = tableView;
+    
+    fields = [[NSMutableArray alloc] init ];
+}
 
 - (void)viewDidLoad
 {
@@ -73,26 +86,14 @@
     [super viewDidDisappear:animated];
 }
 
-- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
-{
-    // Return YES for supported orientations
-    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+- (BOOL)  shouldAutorotateToInterfaceOrientation:  (UIInterfaceOrientation) interfaceOrientation {
+    return YES;
 }
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger) tableView: (UITableView*) view numberOfRowsInSection: (NSInteger) section {
+    return section == 0 ? [fields count] : 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -102,10 +103,12 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
         cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell.textLabel.lineBreakMode = UILineBreakModeWordWrap;
     }
-    
-    // Configure the cell...
-    
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.frame = CGRectMake(0, 0, 200, 50);
+    int i =  [indexPath indexAtPosition:1];
+    cell.textLabel.text = [fields objectAtIndex:i];
     return cell;
 }
 
@@ -150,8 +153,7 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -160,6 +162,30 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+    if ([indexPath indexAtPosition:1] == phoneFieldIndex & phoneFieldIndex != -1) {
+        [self phoneAction];        
+    }
+}
+
+#pragma mark - Custom methods
+
+- (void) setPoi:(PoiAnnotation *)poi {
+    [fields removeAllObjects];
+    [fields addObject: poi.title];
+    [fields addObject: poi.subtitle];
+    if ([poi.phone isEqualToString: @"--"] ) {
+        phoneFieldIndex = -1;
+    }  else {
+         phoneFieldIndex = [fields count];
+        [fields addObject: poi.phone];
+    }
+    [fields addObject: poi.hours];
+    [fields addObject: poi.specialties];
+    [self.tableView reloadData];
+}
+- (void) phoneAction {
+    NSString* phone = [fields objectAtIndex: phoneFieldIndex];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString: [NSString stringWithFormat: @"tel:%@", phone]]];
 }
 
 @end

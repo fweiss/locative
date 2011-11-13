@@ -11,4 +11,22 @@
 
 @implementation PoiAnnotation
 
+@synthesize coordinate;
+@synthesize title;
+@synthesize subtitle;
+@synthesize phone;
+@synthesize hours;
+@synthesize specialties;
+
+- (id) init {
+    coordinate.latitude = 0.0;
+    coordinate.longitude = 0.0;
+    return self;
+}
+- (void) setLatitude: (double) latitude {
+    coordinate.latitude = latitude;
+}
+- (void) setLongitude: (double )longitude {
+    coordinate.longitude = longitude;
+}
 @end

@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PoiAnnotation.h"
 
 
-@interface PoiDetailController2 : UITableViewController {
-    
+@interface PoiDetailController2 : UITableViewController <UITableViewDelegate,UITableViewDataSource> {
+    NSMutableArray* fields;
+    uint phoneFieldIndex;
 }
+
+- (void) setPoi: (PoiAnnotation*) poi;;
 
 @end

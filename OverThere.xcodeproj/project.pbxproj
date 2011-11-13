@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D96384113B06D6E008E5E3F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D96384013B06D6E008E5E3F /* MapKit.framework */; };
+		2D96384513B19838008E5E3F /* TopicController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D96384413B19838008E5E3F /* TopicController.m */; };
+		2D96384813B2E760008E5E3F /* PoiAnnotation.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D96384713B2E760008E5E3F /* PoiAnnotation.m */; };
+		2D96384B13B2FA6B008E5E3F /* GeoRssFeedParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D96384A13B2FA6B008E5E3F /* GeoRssFeedParser.m */; };
+		2D96385213B45959008E5E3F /* PoiDetailControllerNib1.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D96385013B45959008E5E3F /* PoiDetailControllerNib1.m */; };
+		2D96385313B45959008E5E3F /* PoiDetailControllerNib1.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D96385113B45959008E5E3F /* PoiDetailControllerNib1.xib */; };
+		2D96385613B4EC6B008E5E3F /* PoiDetailController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D96385513B4EC6B008E5E3F /* PoiDetailController2.m */; };
 		2DCD598B13B05B9900B06640 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598A13B05B9900B06640 /* UIKit.framework */; };
 		2DCD598D13B05B9900B06640 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598C13B05B9900B06640 /* Foundation.framework */; };
 		2DCD598F13B05B9900B06640 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2DCD598E13B05B9900B06640 /* CoreGraphics.framework */; };
@@ -17,25 +24,42 @@
 		2DCD59A213B05B9900B06640 /* MainWindow_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD59A013B05B9900B06640 /* MainWindow_iPhone.xib */; };
 		2DCD59A613B05B9900B06640 /* OverThereAppDelegate_iPad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD59A513B05B9900B06640 /* OverThereAppDelegate_iPad.m */; };
 		2DCD59A913B05B9900B06640 /* MainWindow_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2DCD59A713B05B9900B06640 /* MainWindow_iPad.xib */; };
+		2DCD59B113B0623400B06640 /* MapController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DCD59B013B0623400B06640 /* MapController.m */; };
+		2DEE3AB8146EEC030010D30C /* README in Resources */ = {isa = PBXBuildFile; fileRef = 2DEE3AB7146EEC030010D30C /* README */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2D96384013B06D6E008E5E3F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		2D96384313B19838008E5E3F /* TopicController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TopicController.h; path = ../TopicController.h; sourceTree = "<group>"; };
+		2D96384413B19838008E5E3F /* TopicController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TopicController.m; path = ../TopicController.m; sourceTree = "<group>"; };
+		2D96384613B2E760008E5E3F /* PoiAnnotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiAnnotation.h; sourceTree = "<group>"; };
+		2D96384713B2E760008E5E3F /* PoiAnnotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiAnnotation.m; sourceTree = "<group>"; };
+		2D96384913B2FA6B008E5E3F /* GeoRssFeedParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeoRssFeedParser.h; sourceTree = "<group>"; };
+		2D96384A13B2FA6B008E5E3F /* GeoRssFeedParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeoRssFeedParser.m; sourceTree = "<group>"; };
+		2D96384F13B45959008E5E3F /* PoiDetailControllerNib1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailControllerNib1.h; sourceTree = "<group>"; };
+		2D96385013B45959008E5E3F /* PoiDetailControllerNib1.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailControllerNib1.m; sourceTree = "<group>"; };
+		2D96385113B45959008E5E3F /* PoiDetailControllerNib1.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PoiDetailControllerNib1.xib; sourceTree = "<group>"; };
+		2D96385413B4EC6B008E5E3F /* PoiDetailController2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoiDetailController2.h; sourceTree = "<group>"; };
+		2D96385513B4EC6B008E5E3F /* PoiDetailController2.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoiDetailController2.m; sourceTree = "<group>"; };
 		2DCD598613B05B9900B06640 /* OverThere.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OverThere.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DCD598A13B05B9900B06640 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2DCD598C13B05B9900B06640 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		2DCD598E13B05B9900B06640 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		2DCD599213B05B9900B06640 /* OverThere-Info.plist */ = {isa = PBXFileReference; path = "OverThere-Info.plist"; sourceTree = "<group>"; };
+		2DCD599213B05B9900B06640 /* OverThere-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OverThere-Info.plist"; sourceTree = "<group>"; };
 		2DCD599413B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		2DCD599613B05B9900B06640 /* OverThere-Prefix.pch */ = {isa = PBXFileReference; path = "OverThere-Prefix.pch"; sourceTree = "<group>"; };
+		2DCD599613B05B9900B06640 /* OverThere-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OverThere-Prefix.pch"; sourceTree = "<group>"; };
 		2DCD599713B05B9900B06640 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2DCD599913B05B9900B06640 /* OverThereAppDelegate.h */ = {isa = PBXFileReference; path = OverThereAppDelegate.h; sourceTree = "<group>"; };
+		2DCD599913B05B9900B06640 /* OverThereAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverThereAppDelegate.h; sourceTree = "<group>"; };
 		2DCD599A13B05B9900B06640 /* OverThereAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverThereAppDelegate.m; sourceTree = "<group>"; };
-		2DCD599D13B05B9900B06640 /* OverThereAppDelegate_iPhone.h */ = {isa = PBXFileReference; name = OverThereAppDelegate_iPhone.h; path = iPhone/OverThereAppDelegate_iPhone.h; sourceTree = "<group>"; };
+		2DCD599D13B05B9900B06640 /* OverThereAppDelegate_iPhone.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OverThereAppDelegate_iPhone.h; path = iPhone/OverThereAppDelegate_iPhone.h; sourceTree = "<group>"; };
 		2DCD599E13B05B9900B06640 /* OverThereAppDelegate_iPhone.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OverThereAppDelegate_iPhone.m; path = iPhone/OverThereAppDelegate_iPhone.m; sourceTree = "<group>"; };
 		2DCD59A113B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPhone/en.lproj/MainWindow_iPhone.xib; sourceTree = "<group>"; };
-		2DCD59A413B05B9900B06640 /* OverThereAppDelegate_iPad.h */ = {isa = PBXFileReference; name = OverThereAppDelegate_iPad.h; path = iPad/OverThereAppDelegate_iPad.h; sourceTree = "<group>"; };
+		2DCD59A413B05B9900B06640 /* OverThereAppDelegate_iPad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = OverThereAppDelegate_iPad.h; path = iPad/OverThereAppDelegate_iPad.h; sourceTree = "<group>"; };
 		2DCD59A513B05B9900B06640 /* OverThereAppDelegate_iPad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = OverThereAppDelegate_iPad.m; path = iPad/OverThereAppDelegate_iPad.m; sourceTree = "<group>"; };
 		2DCD59A813B05B9900B06640 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = iPad/en.lproj/MainWindow_iPad.xib; sourceTree = "<group>"; };
+		2DCD59AF13B0623300B06640 /* MapController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapController.h; sourceTree = "<group>"; };
+		2DCD59B013B0623400B06640 /* MapController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapController.m; sourceTree = "<group>"; };
+		2DEE3AB7146EEC030010D30C /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D96384113B06D6E008E5E3F /* MapKit.framework in Frameworks */,
 				2DCD598B13B05B9900B06640 /* UIKit.framework in Frameworks */,
 				2DCD598D13B05B9900B06640 /* Foundation.framework in Frameworks */,
 				2DCD598F13B05B9900B06640 /* CoreGraphics.framework in Frameworks */,
@@ -55,6 +80,7 @@
 		2DCD597B13B05B9800B06640 = {
 			isa = PBXGroup;
 			children = (
+				2D96384013B06D6E008E5E3F /* MapKit.framework */,
 				2DCD599013B05B9900B06640 /* OverThere */,
 				2DCD598913B05B9900B06640 /* Frameworks */,
 				2DCD598713B05B9900B06640 /* Products */,
@@ -82,11 +108,25 @@
 		2DCD599013B05B9900B06640 /* OverThere */ = {
 			isa = PBXGroup;
 			children = (
+				2D96384913B2FA6B008E5E3F /* GeoRssFeedParser.h */,
+				2D96384A13B2FA6B008E5E3F /* GeoRssFeedParser.m */,
+				2D96384313B19838008E5E3F /* TopicController.h */,
+				2D96384413B19838008E5E3F /* TopicController.m */,
 				2DCD599913B05B9900B06640 /* OverThereAppDelegate.h */,
 				2DCD599A13B05B9900B06640 /* OverThereAppDelegate.m */,
 				2DCD599C13B05B9900B06640 /* iPhone */,
 				2DCD59A313B05B9900B06640 /* iPad */,
 				2DCD599113B05B9900B06640 /* Supporting Files */,
+				2DCD59AF13B0623300B06640 /* MapController.h */,
+				2DCD59B013B0623400B06640 /* MapController.m */,
+				2D96384613B2E760008E5E3F /* PoiAnnotation.h */,
+				2D96384713B2E760008E5E3F /* PoiAnnotation.m */,
+				2D96384F13B45959008E5E3F /* PoiDetailControllerNib1.h */,
+				2D96385013B45959008E5E3F /* PoiDetailControllerNib1.m */,
+				2D96385113B45959008E5E3F /* PoiDetailControllerNib1.xib */,
+				2D96385413B4EC6B008E5E3F /* PoiDetailController2.h */,
+				2D96385513B4EC6B008E5E3F /* PoiDetailController2.m */,
+				2DEE3AB7146EEC030010D30C /* README */,
 			);
 			path = OverThere;
 			sourceTree = "<group>";
@@ -172,6 +212,8 @@
 				2DCD599513B05B9900B06640 /* InfoPlist.strings in Resources */,
 				2DCD59A213B05B9900B06640 /* MainWindow_iPhone.xib in Resources */,
 				2DCD59A913B05B9900B06640 /* MainWindow_iPad.xib in Resources */,
+				2D96385313B45959008E5E3F /* PoiDetailControllerNib1.xib in Resources */,
+				2DEE3AB8146EEC030010D30C /* README in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -186,6 +228,12 @@
 				2DCD599B13B05B9900B06640 /* OverThereAppDelegate.m in Sources */,
 				2DCD599F13B05B9900B06640 /* OverThereAppDelegate_iPhone.m in Sources */,
 				2DCD59A613B05B9900B06640 /* OverThereAppDelegate_iPad.m in Sources */,
+				2DCD59B113B0623400B06640 /* MapController.m in Sources */,
+				2D96384513B19838008E5E3F /* TopicController.m in Sources */,
+				2D96384813B2E760008E5E3F /* PoiAnnotation.m in Sources */,
+				2D96384B13B2FA6B008E5E3F /* GeoRssFeedParser.m in Sources */,
+				2D96385213B45959008E5E3F /* PoiDetailControllerNib1.m in Sources */,
+				2D96385613B4EC6B008E5E3F /* PoiDetailController2.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,12 +305,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OverThere/OverThere-Prefix.pch";
 				INFOPLIST_FILE = "OverThere/OverThere-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -271,11 +321,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OverThere/OverThere-Prefix.pch";
 				INFOPLIST_FILE = "OverThere/OverThere-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -300,6 +352,7 @@
 				2DCD59AE13B05B9900B06640 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

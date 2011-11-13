@@ -9,8 +9,10 @@
 #import <UIKit/UIKit.h>
 
 
-@interface TopicController : UIViewController {
-    
+@interface TopicController : UIViewController <UITableViewDelegate,UITableViewDataSource> {
+    NSArray* topics;
 }
+
+@property (nonatomic, retain) NSArray* topics;
 
 @end

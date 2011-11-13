@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MapController.h"
+#import "TopicController.h"
 
-@interface OverThereAppDelegate : NSObject <UIApplicationDelegate> {
-
+@interface OverThereAppDelegate : NSObject <UIApplicationDelegate, UITabBarControllerDelegate> {
+    MapController* mapController;
+    TopicController* topicController;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;

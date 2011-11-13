@@ -7,6 +7,11 @@
 //
 
 #import "OverThereAppDelegate.h"
+#import "MapController.h"
+
+@interface OverThereAppDelegate (private)
+- (void) createTabBar;
+@end
 
 @implementation OverThereAppDelegate
 
@@ -16,7 +21,15 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    [self createTabBar];
+    
+    NSArray* arry =  [[NSArray alloc] initWithObjects: @"Restaurants", @"Bars", @"Beauty Care", @"Clothing Stores", @"Groceries", @"Stairways", nil];
+    topicController.topics = arry;
+    
+    [[NSNotificationCenter defaultCenter] addObserver: mapController selector:@selector(topicChanged:) name: @"topicChanged" object: nil];
+    
     [self.window makeKeyAndVisible];
+   // [mapController gotoLocation];
     return YES;
 }
 
@@ -63,6 +76,31 @@
 {
     [_window release];
     [super dealloc];
+}
+
+#pragma mark - Custom Methods
+
+/**
+ * Create the tab bar at the bottom of the screen.
+ */
+- (void) createTabBar {
+    NSMutableArray* controllers = [[NSMutableArray alloc] init];
+    
+    mapController= [[MapController alloc] init];
+    mapController.title = @"Map";
+    //[controllers addObject: mapController];
+    [controllers addObject: [[UINavigationController alloc] initWithRootViewController: mapController]];
+   
+    topicController = [[TopicController alloc] init];
+    topicController.title = @"Topics";
+    [controllers addObject: topicController];
+    
+    UITabBarController* tabBarController = [[UITabBarController alloc] init];
+    tabBarController.delegate = self;
+    tabBarController.viewControllers = controllers;
+    [controllers release];
+    
+    [self.window addSubview: tabBarController.view];
 }
 
 @end
